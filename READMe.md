@@ -2,7 +2,7 @@
 Built API which update HTML content of dashboard, according to  user instruction, CSV, and HTML for dashboard.
 
 ## API Block diagram
-![alt text](test_data/block.png)
+![alt text](data/block.png)
 
 
 ## To Run
@@ -10,12 +10,16 @@ Built API which update HTML content of dashboard, according to  user instruction
 ```
 pip install -r requirements.txt
 ```
+- Create `.env` in parent directory and add gemini API key, you can see `.example.env` file for reference.
+```
+GOOGLE_API_KEY = ""
+```
 - run api using following command
 ```
 uvicorn main:app --reload
 ```
 ## Input API
-![alt text](test_data/input.png)
+![alt text](data/input.png)
 
 ## Output API
-![alt text](test_data/output.png)
+![alt text](data/output.png)
